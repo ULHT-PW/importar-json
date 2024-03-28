@@ -1,10 +1,38 @@
 # Tutorial de importação de dados em ficheiros JSON na BD duma webapp Django
 
 * Neste documento descrevem-se os passos para importar dados em JSON numa aplicação web. Usaremos como exemplo uma aplicação com informação de escritores e seus livros.
-* aplicação exemplo:
+* [video demo](https://educast.fccn.pt/vod/clips/1oye8xaocv/link_box_h?locale=pt) pode ver todos os passos desde a criação da aplicação até a BD criada
+* aplicação exemplo usada na demo assim como no tutorial em baixo:
     * bibliotecaluso.pythonanywhere.com/admin
     * admin, admin
-* [video demo](https://educast.fccn.pt/vod/clips/1oye8xaocv/link_box_h?locale=pt) pode ver todos os passos desde a criação da aplicação até a BD criada  
+* estrutura da aplicação:
+
+```bash
+.
+├── ./biblioteca
+│   ├── ./biblioteca/__init__.py
+│   ├── ./biblioteca/admin.py
+│   ├── ./biblioteca/apps.py
+│   ├── ./biblioteca/json
+│   │   ├── ./biblioteca/json/autores.json
+│   │   └── ./biblioteca/json/livros.json
+│   ├── ./biblioteca/loader.py
+│   ├── ./biblioteca/migrations
+│   │   ├── ./biblioteca/migrations/0001_initial.py
+│   │   ├── ./biblioteca/migrations/__init__.py
+│   ├── ./biblioteca/models.py
+│   ├── ./biblioteca/tests.py
+│   └── ./biblioteca/views.py
+├── ./db.sqlite3
+├── ./manage.py
+├── ./media
+├── ./project
+│   ├── ./project/__init__.py
+│   ├── ./project/asgi.py
+│   ├── ./project/settings.py
+│   ├── ./project/urls.py
+│   └── ./project/wsgi.py
+```
 
 ## 1. Ficheiros JSON
 
