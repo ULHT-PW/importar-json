@@ -4,7 +4,7 @@
 * aplicação exemplo:
     * bibliotecaluso.pythonanywhere.com/admin
     * admin, admin
-* video demo de todos os passos:  
+* [video demo](https://educast.fccn.pt/vod/clips/1oye8xaocv/link_box_h?locale=pt) de todos os passos:  
 
 ## 1. Ficheiros JSON
 
