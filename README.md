@@ -1,15 +1,15 @@
 # Importação de dados em json numa aplicação Django
 
-* Passos para importar JSON para numa aplicação.
+* Neste documento descrevem-se os passos para importar dados em JSON numa aplicação web.
 * aplicação exemplo:
     * bibliotecaluso.pythonanywhere.com/admin
     * admin, admin
-* [video demo](https://educast.fccn.pt/vod/clips/1oye8xaocv/link_box_h?locale=pt) de todos os passos:  
+* [video demo](https://educast.fccn.pt/vod/clips/1oye8xaocv/link_box_h?locale=pt) pode ver todos os passos desde a criação da aplicação até a BD criada  
 
 ## 1. Ficheiros JSON
 
 * Crie os ficheiros json com a informação que pretende carregar. 
-* Guarde-nos na aplicação, por exemplo numa pasta chamada /json.
+* Guarde-nos na aplicação django para onde os quer importar, por exemplo numa pasta /json.
 * Analise com atenção a informação que tem disponivel, e os tipos de dados que a armazena (lista, dicionario, string, inteiro, etc)
   
 autores.json
@@ -56,8 +56,6 @@ Crie modelos que vão o encontro do que pretende.
 
 from django.db import models
 
-# Create your models here.
-
 class Autor(models.Model):
     nome = models.CharField(max_length=50)
     ano_nascimento = models.IntegerField()
@@ -95,7 +93,11 @@ Livro.objects.all().delete()
 with open('biblioteca/json/autores.json') as f:
     autores = json.load(f)
 
-    for autor, info in autores.items():
+    # autores é um dicionario de autores, tendo como
+    # chave o nome do autor, e como
+    # valor um dicionario com informação do autor  
+
+    for autor, info in autores.items(): 
         Autor.objects.create(
             nome = autor,
             ano_nascimento = info['ano_nascimento'],
@@ -104,6 +106,9 @@ with open('biblioteca/json/autores.json') as f:
 
 with open('biblioteca/json/livros.json') as f:
     livros = json.load(f)
+
+    # livros é uma lista de dicionarios,
+    # cada dicionario tendo informacao de um livro
 
     for livro in livros:
         Livro.objects.create(
