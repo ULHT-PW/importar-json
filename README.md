@@ -147,9 +147,10 @@ with open('biblioteca/json/livros.json') as f:
             )
 ```
 
-## 4. execute na shell o script
+## 4. Execute o script de importação na shell
 
-Execute na shell do django o script. Para tal, na shell, importe o script.
+* Na shell do Django, execute o script. ISto irá importar os dados do JSON para a base de dados
+* confira depois no interface web /admin que os dados foram devidamente carregados.
 
 ```bash
 13:08 ~/project $ python manage.py shell
