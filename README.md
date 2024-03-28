@@ -1,4 +1,4 @@
-# Importação de dados em json numa aplicação
+# Importação de dados em json numa aplicação Django
 
 * Passos para importar JSON para numa aplicação.
 * aplicação exemplo:
