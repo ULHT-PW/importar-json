@@ -1,7 +1,10 @@
 # Importação de dados em json numa aplicação
 
-Passos para importar JSON para numa aplicação.
-
+* Passos para importar JSON para numa aplicação.
+* aplicação exemplo:
+    * bibliotecaluso.pythonanywhere.com/admin
+    * admin, admin
+* video demo de todos os passos:  
 
 ## 1. Ficheiros JSON
 
@@ -22,11 +25,7 @@ autores.json
     "ano_nascimento": 1845,
     "ano_falecimento": 1900
   },
-  "Jorge Amado": {
-    "nacionalidade": "Brasileiro",
-    "ano_nascimento": 1912,
-    "ano_falecimento": 2001
-  }
+  # ...
 }
 ```
 
@@ -47,13 +46,7 @@ livros.json
     "ano_publicacao": 1878,
     "lingua": "Português"
   },
-  {
-    "titulo": "Capitães da Areia",
-    "autor": "Jorge Amado",
-    "genero": "Romance",
-    "ano_publicacao": 1937,
-    "lingua": "Português"
-  }
+  # ...
 ]
 ```
 ## 2. Definição de models
