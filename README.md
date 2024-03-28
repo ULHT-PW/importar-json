@@ -24,8 +24,7 @@ autores.json
     "nacionalidade": "Português",
     "ano_nascimento": 1845,
     "ano_falecimento": 1900
-  },
-  // ...
+  }
 }
 ```
 
@@ -45,8 +44,7 @@ livros.json
     "genero": "Romance",
     "ano_publicacao": 1878,
     "lingua": "Português"
-  },
-  // ...
+  }
 ]
 ```
 ## 2. Definição de models
