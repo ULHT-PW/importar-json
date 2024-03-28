@@ -1,7 +1,7 @@
 # Tutorial de carregamento de dados JSON na BD duma webapp Django
 
 * Neste documento descrevem-se os passos para importar dados em JSON numa aplicação web. Usaremos como exemplo uma aplicação com informação de escritores e seus livros.
-* [video demo](https://educast.fccn.pt/vod/clips/1oye8xaocv/link_box_h?locale=pt) pode ver todos os passos desde a criação da aplicação até a BD criada
+* [video demo](https://educast.fccn.pt/vod/clips/1oye8xaocv/link_box_h?locale=pt) onde pode ver todos os passos desde a criação da aplicação até a BD criada
 * aplicação exemplo usada na demo assim como no tutorial em baixo:
     * bibliotecaluso.pythonanywhere.com/admin
     * admin, admin
