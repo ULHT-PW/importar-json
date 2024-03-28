@@ -1,6 +1,6 @@
 # Importação de dados em ficheiros JSON na BD duma webapp Django
 
-* Neste documento descrevem-se os passos para importar dados em JSON numa aplicação web.
+* Neste documento descrevem-se os passos para importar dados em JSON numa aplicação web. Usaremos como exemplo uma aplicação com informação de escritores e seus livros.
 * aplicação exemplo:
     * bibliotecaluso.pythonanywhere.com/admin
     * admin, admin
