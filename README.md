@@ -1,4 +1,4 @@
-# Importação de JSON numa webapp Django
+# Importação de dados em ficheiros JSON na BD duma webapp Django
 
 * Neste documento descrevem-se os passos para importar dados em JSON numa aplicação web.
 * aplicação exemplo:
